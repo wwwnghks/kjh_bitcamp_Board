@@ -1,0 +1,215 @@
+/*
+    웹페이지 만들기 기본 css
+    2018.04.06
+    유영진
+*/
+
+
+@import url('https://fonts.googleapis.com/css?family=Jua|Nanum+Gothic|Nanum+Myeongjo');
+
+/*스타일 초기화*/
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+
+a {
+    /* a 테그의 밑줄 제거 */
+    text-decoration: none;
+}
+
+li {
+    /* 리스트의 도트 제거 */
+    list-style: none;
+}
+
+body {
+    /* 기본 폰트 모양 지정 */
+    font-family: 'Nanum Gothic', sans-serif;
+    background-color: #EEEEEE;
+}
+
+
+
+
+/*-----------------------------------*/
+
+/*전체를 감싸는 블럭 설정*/
+
+.main_wrap {
+    /* 블럭의 사이즈 */
+    width: 960px;
+
+    /* 블럭의 배경색 */
+    background-color: #FFFFFF;
+
+    /* 블럭을 수평방향으로 중앙에 배치 */
+    margin: 0 auto;
+    /* 위 간격 조정 */
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    /*테두리 설정*/
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
+
+    /*블럭 내부 컨텐츠와의 간격*/
+    padding: 15px;
+}
+
+
+
+/*-----------------------------------*/
+
+/*해더 설정*/
+
+#main_header {
+    padding: 30px;
+}
+
+.main_title {
+    font-size: 200%;
+    font-family: 'Jua', sans-serif;
+}
+
+.main_title + p {
+    font-size: 12px;
+    color: #666666;
+}
+
+/*-----------------------------------*/
+
+/* 네비게이션 설정 */
+
+#main_navigation {
+    height: 35px;
+    border-top: 1px solid #aaaaaa;
+    border-bottom: 1px solid #aaaaaa;
+
+    /*수평정렬 설정*/
+    overflow: hidden;
+}
+
+.main_menu {
+
+    /*네비게이션 영역에서 메뉴 영역을 외쪽으로 정렬*/
+    float: left;
+
+    /*li 메뉴들을 수평으로 정렬*/
+    overflow: hidden;
+}
+
+.search_box {
+    /*네비게이션 영역에서 서치박스 영역을 오른쪾으로 정렬*/
+    float: right;
+}
+
+
+/*메뉴 설정*/
+
+.main_menu > li {
+
+    /* li 영역을 수평방향으로 정렬*/
+    float: left;
+
+    height: 35px;
+    /*텍스트의 수직방향의 중앙에 배치*/
+    line-height: 35px;
+
+    padding: 0 15px;
+}
+
+.main_menu > li:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+/*서치박스 설정*/
+
+.search_box {
+    height: 35px;
+    padding-top: 4px;
+    margin-right: 10px;
+}
+
+.search_box > input[type=text] {
+    height: 22px;
+    vertical-align: middle;
+    border-radius: 11px 0 0 11px;
+    border: 1px solid #AAAAAA;
+}
+
+.search_box > input[type=submit] {
+    height: 24px;
+    width: 60px;
+    vertical-align: middle;
+    border: 1px solid #AAAAAA;
+    border-radius: 0 12px 12px 0;
+    margin-left: -1px;
+}
+
+
+/*-----------------------------------*/
+
+/*본문 설정*/
+
+#content {
+    overflow: hidden;
+}
+
+#main_section {
+    float: left;
+    width: 700px;
+    padding: 15px;
+}
+
+#main_aside {
+    float: right;
+    width: 200px;
+}
+
+.basic_article {
+    line-height: 160%;
+    border-bottom: 1px solid #aaaaaa;
+    margin-top: 30px;
+}
+
+.article_title {
+    font-weight: normal;
+    font-size: 2.0em;
+    margin: 15px 0;
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+.basic_article > p {
+    padding: 10px 0;
+}
+
+/*-----------------------------------*/
+
+/*aside 설정*/
+
+#main_aside > h1 {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+#main_aside > ul {
+    margin-left: 10px;
+    line-height: 160%;
+}
+
+/*-----------------------------------*/
+
+/*footer 설정*/
+
+#footer {
+    text-align: left;
+    color: blue;
+    font-size: 12px;
+}
+
+/*-----------------------------------*/
+
+
